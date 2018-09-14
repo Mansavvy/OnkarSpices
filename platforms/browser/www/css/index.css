@@ -1,0 +1,655 @@
+.login_div{
+  padding: 0px 10px;
+}
+.view{
+  margin-top: 50px;
+      margin-bottom: 44px;
+          overflow: hidden;
+}
+.overFlowHidden{
+  overflow: hidden !important;
+  
+}
+.loading{
+  display: none;
+      position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+        z-index: 9999999;
+            background-color: #e1e1e1;
+    opacity: 0.5;
+}
+.loading img{
+      position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+}
+.loginBtn{
+  width: 49%;
+  margin-bottom: 10px;
+}
+.mainLogo{
+      width: 40%;
+    margin: 10% auto;
+    display: block;
+}
+.topnav{
+  width: 100%;
+  background-color:   #007bff;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+      position: fixed;
+          z-index: 999999;
+    top: 0px;
+}
+.topnav h4{
+      margin: 14px 0px;
+    font-family: fantasy;
+}
+.topnav .fa-arrow-circle-o-left{
+  position: absolute;
+    font-size: 32px;
+    left: 10px;
+        top: 0px;
+    padding: 9px 0px;
+}
+.topnav .fa-circle-o-notch{
+position: absolute;
+    font-size: 32px;
+    right: 10px;
+        top: 0px;
+    padding: 9px 0px;
+}
+.topnav .fa-power-off{
+  position: absolute;
+    font-size: 32px;
+    right: 10px;
+        top: 0px;
+    padding: 9px 0px;
+}
+.optionBox{
+      border: 1px solid #ccc;
+    margin: 15px 0px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.optionBox i{
+      color: #ccc;
+    font-size: 60px;
+    text-align: center;
+    margin: 25px auto 8px;
+    display: block;
+}
+.optionBox span{
+  font-family: fantasy;
+    font-weight: bolder;
+}
+
+
+
+
+
+.optionBox{
+  -moz-transform: translateX(-100%);
+  -moz-transition: transform 0.5s, opacity 2s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  -moz-transform: translateX(0%);
+}
+
+.displayNone{
+  display: none;
+}
+.listHead{
+      background-color: #ccc;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+.menuDiv ul{
+  margin: 0px;
+  padding: 0px;
+}
+.menuDiv ul li{
+  margin: 0px;
+  padding: 0px;
+      border-bottom: 1px solid #ccc;
+    padding: 8px 10px;
+  list-style-type: none;
+  font-family: fantasy;
+  display: none;
+}
+.menuDiv ul li img{
+    width: 50px;
+    height: 45px;
+     margin-right: 5px; 
+}
+.price{
+      float: right;
+    font-size: 18px;
+    font-family: fantasy;
+    padding: 10px 0px;
+}
+.totalPrice{
+    position: fixed;
+    font-family: fantasy;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #fff;
+    padding: 10px;
+    background-color: #007bff;
+}
+.selectedItem{
+  background-color: #057dff5e;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png");
+      background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 80% 50%;
+}
+.orignalPrice{
+      float: right;
+      font-family: fantasy;
+}
+.prod{
+  font-family: fantasy;
+          padding: 15px 10px 0px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+}
+.prod input{
+  width: 20%;
+  display: inline-block;
+  float: left;
+}
+.prod .amount{
+      float: right;
+    font-size: 20px;
+}
+.prod span{
+      float: left;
+    padding: 7px 0px;
+}
+.finalAmount{
+  float: right !important;
+      font-family: fantasy;
+}
+.orderAmount{
+  float: right !important;
+
+}
+.earnPoints{
+  float: right !important;
+
+}
+#totalAmount{
+  text-align: center;
+    font-family: fantasy;
+    width: 100%;
+
+    color: #fff;
+    padding: 10px;
+    background-color: #007bff;
+}
+#totalAmount .orderAmount{
+  display: none;
+
+}
+.deliveryAmount{
+  float: right !important;
+}
+.hstAmount{
+  float: right !important;
+}
+.countQun{
+      display: inline-block;
+    padding: 0px 10px;
+    font-size: 30px;
+    height: 38px;
+    float: left;
+    border: 1px solid #000;
+}
+.prod input{
+  text-align: center;
+}
+.orderName{
+      padding: 6px;
+    margin: 0px !important;
+    position: fixed;
+    width: 100%;
+        z-index: 99999;
+}
+.secondDiv{
+  padding-top: 44px;
+}
+.genderDiv{
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.genderDiv img{
+  width: 100%;
+}
+.signup h5{
+      padding-top: 10px;
+}
+.error{
+  border: 1px solid red;
+}
+.signup a{
+  text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: underline !important;
+    color: #007bff !important;
+}
+.terms img{
+      width: 80px;
+          padding-top: 10px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+.terms h3{
+     text-align: center;
+}
+.terms p{
+     text-align: justify;
+    padding: 15px;
+}
+.orderConfirm i{
+      margin: 0px auto;
+    display: block;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 240px;
+    color: #28a745;
+}
+.orderConfirm h3{
+  text-align: center;
+}
+.orderConfirm h5{
+      font-size: 15px;
+    text-align: center;
+}
+.orderConfirm h5 strong i{
+     font-size: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.preorders ul{
+  margin: 0px;
+  padding: 0px;
+}
+.preorders ul li{
+      list-style-type: none;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+  .preorders ul li i{
+        position: absolute;
+    font-size: 20px;
+    right: 10px;
+    bottom: 10px;
+  }
+.preorders ul li .amountToBePaid{
+      float: right;
+  }
+  .preorders ul li hr{
+        margin: 5px 0px;
+  }
+ .topnav .fa-shopping-cart{
+    position: absolute;
+    font-size: 32px;
+    right: 10px;
+    top: 0px;
+    padding: 9px 0px;
+}
+.rememberMe{
+  display: block;
+  margin-bottom: 15px;
+}
+.privacyPolicy{
+  display: none;
+      border: 2px solid #ccc;
+    position: absolute;
+    top: 60px;
+    width: 300px;
+    background: #fff;
+    margin: auto;
+    height: 500px;
+    bottom: 0px;
+    overflow-y: scroll;
+    left: 0px;
+    right: 0px;
+}
+.privacyPolicy span{
+  position: absolute;
+    right: 10px;
+    font-size: 28px;
+}
+.foodcard{
+      text-align: center;
+}
+.foodcard i{
+      margin: 0px auto !important;
+    display: block !important;
+    font-size: 200px !important;
+}
+
+.deliveryOptions{
+  display: block;
+  margin: 15px;
+}
+.appSettHead{
+    margin: 15px;
+}
+
+/* ------------------------------------------- Flyer ---------------------------------------*/
+.flyerSheet {
+    position: relative;
+    width: 600px;
+    padding-bottom: 100px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+.headerLogo1 {
+    position: absolute;
+    width: 10%;
+    top: 20px;
+    left: 10px;
+}
+
+.footerLogo1 {
+    position: absolute;
+    width: 10%;
+    bottom: 20px;
+    left: 10px;
+}
+
+.headerLogo2 {
+    position: absolute;
+    width: 10%;
+    top: 20px;
+    right: 10px;
+}
+
+.footerLogo2 {
+    position: absolute;
+    width: 10%;
+    bottom: 20px;
+    right: 10px;
+}
+
+.headingInput {
+    display: block;
+    margin: 5% auto;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 72%;
+    background-color:#fff;
+}
+
+.headingInput:focus {
+    border: 1px solid #ccc;
+}
+
+.footerCopy {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size:12px;
+}
+
+
+
+.box {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.productDiv {
+
+    height: 130px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.productDiv i {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    width: 32px;
+    height: 36px;
+    font-size: 40px;
+}
+
+.box p {
+    margin: 0px;
+}
+
+.box select,
+input {
+    width: 100%;
+}
+
+#enteringSpace img {
+    width: 90px;
+    height: 80px;
+    margin: 5px auto 0px;
+    display: block;
+}
+
+#btnSave {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.flyer-box {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.flyer-data-box {
+    transition: transform .2s;
+}
+
+
+.flyer-data-box .card {
+    padding: 8px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.flyer-data-box .card h3 {
+    text-align: center;
+    margin: 0px;
+}
+
+.flyer-data-box .card hr {
+    margin-bottom: 5px;
+}
+
+.flyer-data-box .card i {
+    margin: 10px auto;
+    color: #ccc;
+    font-size: 80px;
+
+}
+
+
+
+.flyer-data-box:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.data-box {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.viewFlyers .flyerSheet {
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.data-box img {
+    width: 90px;
+    height: 80px;
+    margin: 5px auto;
+    display: block;
+}
+
+.data-box p {
+    margin: 0px;
+    font-size: 7px;
+}
+
+.data-box p span {
+    float: right;
+}
+
+.data-box hr {
+    margin: 5px 0px;
+}
+
+#showFlyer .modal-dialog {
+    max-width: 700px;
+}
+
+.fadeDiv {
+    opacity: 0.6;
+    border: 1px solid red;
+}
+
+.viewFlyers .headingInput {
+    border: 0px;
+}
+#showFlyer .modal-dialog {
+    margin-top: 55px;
+}
+.displayNone{
+    display:none !important;
+}
+.statusOfFlyer{
+    position:fixed;
+        top: 21px;
+    right: 45px;
+    font-size:12px;
+    color:#000;
+    font-weight: bold;
+}
+.notificationSett{
+  margin:15px;
+}
+#mapModal .modal-dialog{
+  margin-top: 100px;
+}
+#map{
+  width: 100% !important;
+    height: 250px !important;
+}
+#device-lat{
+  border: 1px solid #ccc;
+  display: none;
+}
+#device-long{
+  border: 1px solid #ccc;
+  display: none;
+}
+#address{
+  display: block;
+    width: 100%;
+    float: left;
+}
+.mapBtn{
+  display: block;
+  width: 100%;
+    border-radius: 0px;
+}
+.recBtns{
+  width: 100%;
+  border-radius: 0px;
+}
+.privacyBtn{
+  width: 100%;
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+#privacyPolicy .modal-dialog{
+      margin-top: 60px;
+}
+#privacyPolicy img{
+  width: 80px;
+      display: block;
+    margin: 0px auto;
+}
+#privacyPolicy .modal-body{
+      height: 300px;
+    overflow-x: scroll;
+}
+#privacyPolicy p{
+        text-align: justify;
+}
+#cardPaymentModal .modal-dialog{
+  margin-top: 100px;
+}
+.paymentProcess{
+  display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999999;
+    background: #fff;
+    opacity: 0.5;
+}
+.paymentProcess img{
+  position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+#recieptModal .modal-dialog{
+  margin-top: 60px;
+}
+#orderedItems>tr:last-child { display: none; }

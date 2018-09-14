@@ -1,0 +1,52 @@
+<div class="topnav">
+    <i class="fa fa-arrow-circle-o-left" ng-click="mainPage()"></i>
+    <h4>App Settings</h4>
+</div>
+<h4 class="text-center appSettHead">Notification Settings</h4>
+<hr>
+<div class="pretty p-default p-has-focus rememberMe notificationSett" ng-click="orderNotify()">
+    <input type="checkbox" id="deliverInfo" />
+    <div class="state p-success-o">
+        <label>Order Notifications</label>
+    </div>
+</div>
+<hr>
+<div class="pretty p-default p-has-focus rememberMe notificationSett" ng-click="cardNotify()">
+    <input type="checkbox" id="foodCard" />
+    <div class="state p-success-o">
+        <label>Card Notifications</label>
+    </div>
+</div>
+<hr>
+<div class="pretty p-default p-has-focus rememberMe notificationSett" ng-click="flyerNotify()">
+    <input type="checkbox" id="flyerInfo" />
+    <div class="state p-success-o">
+        <label>Flyer Notifications</label>
+    </div>
+</div>
+<hr>
+
+<h4 class="text-center appSettHead">GPS Settings</h4>
+<hr>
+<div class="pretty p-default p-has-focus rememberMe notificationSett" ng-click="enableGPS()">
+    <input type="checkbox" id="gpsPermission" />
+    <div class="state p-success-o">
+        <label>GPS Permission</label>
+    </div>
+</div>
+<hr>
+
+<h4 class="text-center appSettHead">Speech Permissions</h4>
+<hr>
+<div class="pretty p-default p-has-focus rememberMe notificationSett" ng-click="enableSpeech()">
+    <input type="checkbox" id="speechPermission" />
+    <div class="state p-success-o">
+        <label>Speech Permission</label>
+    </div>
+</div>
+<hr>
+
+<h4 class="text-center appSettHead">More Accessibility Settings</h4>
+<hr>
+<button type="button" class="btn btn-primary text-center" ng-click="nativeSettings()">More Accessability Settings</button>
+<hr>

@@ -1,0 +1,213 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebasePlugin\"><param name=\"android-package\" value=\"org.apache.cordova.firebase.FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SpeechRecognition\"><param name=\"android-package\" value=\"com.pbakondy.SpeechRecognition\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"NativeSettings\"><param name=\"android-package\" value=\"com.phonegap.plugins.nativesettings.NativeSettings\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "res/values/strings.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<string name=\"google_app_id\">@string/google_app_id</string>",
+              "count": 1
+            },
+            {
+              "xml": "<string name=\"google_api_key\">@string/google_api_key</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<service android:enabled=\"true\" android:exported=\"false\" android:name=\"com.google.android.gms.measurement.AppMeasurementService\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:name=\"org.apache.cordova.firebase.FirebasePluginMessagingService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
+              "count": 1
+            },
+            {
+              "xml": "<service android:name=\"org.apache.cordova.firebase.FirebasePluginInstanceIDService\"><intent-filter><action android:name=\"com.google.firebase.INSTANCE_ID_EVENT\" /></intent-filter></service>",
+              "count": 1
+            },
+            {
+              "xml": "<receiver android:name=\"org.apache.cordova.firebase.OnNotificationOpenReceiver\" />",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:hardwareAccelerated=\"true\" android:label=\"Processing your payment\" android:name=\"in.juspay.godel.PaymentActivity\" android:screenOrientation=\"portrait\" android:theme=\"@style/Theme.AppCompat.Light\" android:windowSoftInputMode=\"adjustResize\" />",
+              "count": 1
+            }
+          ],
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_SMS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"ExpressCheckout\"><param name=\"android-package\" value=\"in.juspay.ec.hybrid.ExpressCheckout\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"TTS\"><param name=\"android-package\" value=\"com.wordsbaking.cordova.tts.TTS\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "juspay-ec-sdk-plugin": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-speechrecognition": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-tts": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-firebase.FirebasePlugin",
+      "file": "plugins/cordova-plugin-firebase/www/firebase.js",
+      "pluginId": "cordova-plugin-firebase",
+      "clobbers": [
+        "FirebasePlugin"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "juspay-ec-sdk-plugin.ExpressCheckout",
+      "file": "plugins/juspay-ec-sdk-plugin/plugin/www/ExpressCheckout.js",
+      "pluginId": "juspay-ec-sdk-plugin",
+      "clobbers": [
+        "ExpressCheckout"
+      ]
+    },
+    {
+      "id": "cordova-plugin-speechrecognition.SpeechRecognition",
+      "file": "plugins/cordova-plugin-speechrecognition/www/speechRecognition.js",
+      "pluginId": "cordova-plugin-speechrecognition",
+      "merges": [
+        "window.plugins.speechRecognition"
+      ]
+    },
+    {
+      "id": "cordova-plugin-tts.tts",
+      "file": "plugins/cordova-plugin-tts/www/tts.js",
+      "pluginId": "cordova-plugin-tts",
+      "clobbers": [
+        "TTS"
+      ]
+    },
+    {
+      "id": "cordova-open-native-settings.Settings",
+      "file": "plugins/cordova-open-native-settings/www/settings.js",
+      "pluginId": "cordova-open-native-settings",
+      "clobbers": [
+        "cordova.plugins.settings"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-firebase": "1.0.5",
+    "cordova-plugin-device": "2.0.2",
+    "juspay-ec-sdk-plugin": "1.1.8",
+    "cordova-plugin-speechrecognition": "1.1.2",
+    "cordova-plugin-tts": "0.2.3",
+    "cordova-open-native-settings": "1.5.1"
+  }
+}

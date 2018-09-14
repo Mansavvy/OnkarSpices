@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "801645569353",
+    "firebase_url": "https://onkar-spices.firebaseio.com",
+    "project_id": "onkar-spices",
+    "storage_bucket": "onkar-spices.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801645569353:android:c35f65b22da726ee",
+        "android_client_info": {
+          "package_name": "com.onkarfoods.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801645569353-fp4lb1h8nuvrr3narcla96rlbotlesla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDosh3aqsZQbNnGuEhzRXg7VlA36ITISTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<div class="topnav">
+	<i class="fa fa-arrow-circle-o-left" ng-click="mainPage()"></i>
+  <h4>User Settings</h4>
+</div>
+<div class="container-fluid signup">
+	<img src="img/logo1.jpg" class="mainLogo">
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Firstname</span>
+	  </div>
+	  <input type="text" class="form-control" id="firstname">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Lastname</span>
+	  </div>
+	  <input type="text" class="form-control" id="lastname">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Username</span>
+	  </div>
+	  <input type="text" class="form-control" id="username" disabled="true">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Password</span>
+	  </div>
+	  <input type="password" class="form-control" id="password">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Contact</span>
+	  </div>
+	  <input type="tel" class="form-control" id="contact">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Street</span>
+	  </div>
+	  <input type="tel" class="form-control" id="streetName">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">House Number</span>
+	  </div>
+	  <input type="tel" class="form-control" id="housenumber">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">City</span>
+	  </div>
+	  <input type="tel" class="form-control" id="city">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Zip Code</span>
+	  </div>
+	  <input type="tel" class="form-control" id="zip">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Status</span>
+	  </div>
+	  <input type="tel" class="form-control" id="acctStatus" disabled="true">
+	</div>
+
+	<button type="button" class="btn btn-primary btn-block" ng-click="updateData()"><i class="fa fa-clone"></i> Update Data</button>
+	<button type="button" class="btn btn-success btn-block" ng-click="activate()"><i class="fa fa-check-circle"></i> Activate Account</button>
+	<button type="button" class="btn btn-danger btn-block" ng-click="deactivate()"><i class="fa fa-power-off"></i> Deactivate Account</button>
+
+</div>

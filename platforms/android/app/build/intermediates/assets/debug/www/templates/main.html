@@ -1,0 +1,69 @@
+<div class="topnav">
+	<i class="fa fa-arrow-circle-o-left" ng-click="logout()"></i>
+  <h4>Welcome</h4>
+  <i class="fa fa-power-off" ng-click="logout()"></i>
+</div>
+<div class="container">
+	<div class="row">
+	    <div class="col-6">
+	    	<div class="optionBox" ng-click="menuPage()">
+	    		<i class="fa fa-list-alt"></i>
+	    		<span>Menu Card</span>
+	    	</div>
+	    </div>
+	    <div class="col-6">
+	    	<div class="optionBox" ng-click="cart()">
+	    		<i class="fa fa-shopping-cart"></i>
+	    		<span>Order Cart</span>
+	    	</div>
+	    </div>
+	    <div class="col-6" ng-click="cardPage()	">
+	    	<div class="optionBox">
+	    		<i class="fa fa-credit-card"></i>
+	    		<span>Food Card</span>
+	    	</div>
+	    </div>
+	    <div class="col-6" ng-click="flyerPage()">
+	    	<div class="optionBox">
+	    		<i class="	fa fa-newspaper-o"></i>
+	    		<span>Flyers</span>
+	    	</div>
+	    </div>
+	    <div class="col-6" ng-click="settingsPage()">
+	    	<div class="optionBox">
+	    		<i class="	fa fa-gears"></i>
+	    		<span>User Settings</span>
+	    	</div>
+	    </div>
+	    <div class="col-6" ng-click="appsettingsPage()">
+	    	<div class="optionBox">
+	    		<i class="fa fa-mobile-phone"></i>
+	    		<span>App Settings</span>
+	    	</div>
+	    </div>
+	  </div>
+</div>
+<div class="modal" id="confirmModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title">Confirm Log Out</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary text-center" ng-click="cnfrmlogout()">Log Out</button>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<a href="tel:+1-519-745-4699" style="display: block;text-align: center;margin-bottom: 10px;    margin-top: 20px;">Call (+1-519-745-4699)</a>
+<a href="mailto:onkarfoods@rogers.com?Subject=Hello%20again" target="_top" style="display: block;text-align: center;margin-bottom: 10px;">Send Mail (onkarfoods@rogers.com)</a>
+<img ng-click="speechRec()" src="https://cdn1.iconfinder.com/data/icons/business-sets/512/612394-mic-512.png" class="mic_img">

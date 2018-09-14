@@ -1,0 +1,32 @@
+<div class="topnav">
+    <i class="fa fa-arrow-circle-o-left" ng-click="loginPage()"></i>
+  <h4>Forgot Password</h4>
+</div>
+<img src="img/logo1.jpg" class="mainLogo">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Username</span>
+  </div>
+  <input type="text" class="form-control" id="username">
+</div>
+<button type="button" class="btn btn-primary loginBtn recBtns" ng-click="sendSecretCode()"><i class="fa fa-chain"></i> Send Code</button>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Secret Code</span>
+  </div>
+  <input type="text" class="form-control" id="sec_code" disabled="true">
+</div>
+
+
+<button type="button" class="btn btn-primary loginBtn recBtns" ng-click="newPass()"><i class="fa fa-chain"></i> Check Code</button>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">New Password</span>
+  </div>
+  <input type="text" class="form-control" id="new_pass" disabled="true">
+</div>
+ 
+
+<button type="button" class="btn btn-primary loginBtn recBtns" ng-click="submitPass()"><i class="fa fa-chain"></i> Submit New Password</button>

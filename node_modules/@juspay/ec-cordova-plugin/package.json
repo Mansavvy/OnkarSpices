@@ -1,0 +1,59 @@
+{
+  "_from": "git+https://bitbucket.org/juspay/ec-cordova-plugin.git",
+  "_id": "@juspay/ec-cordova-plugin@1.1.9",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@juspay/ec-cordova-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://bitbucket.org/juspay/ec-cordova-plugin",
+    "rawSpec": "https://bitbucket.org/juspay/ec-cordova-plugin",
+    "saveSpec": "git+https://bitbucket.org/juspay/ec-cordova-plugin.git",
+    "fetchSpec": "https://bitbucket.org/juspay/ec-cordova-plugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://bitbucket.org/juspay/ec-cordova-plugin.git#8ed23f187fb5405d902d024cc17039ba492529c7",
+  "_spec": "https://bitbucket.org/juspay/ec-cordova-plugin",
+  "_where": "/Users/student/Downloads/ProjectOnkarFoods/OnkarSpices",
+  "author": {
+    "name": "Sachin Sharma"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Sriduth Jayhari",
+      "email": "sriduth.jayhari@juspay.in"
+    }
+  ],
+  "cordova": {
+    "id": "juspay-ec-sdk-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "A Cordova plugin for the Juspay Express Checkout for iOS and android",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.6.0"
+    }
+  ],
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "express",
+    "checkout",
+    "juspay"
+  ],
+  "license": "LGPL-2.1",
+  "name": "@juspay/ec-cordova-plugin",
+  "version": "1.1.9"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="juspay-ec-sdk-plugin"
+    version="1.1.8">
+
+    <name>Juspay-Express-Checkout</name>
+    <description>A Cordova plugin for the Juspay Express Checkout android SDK</description>
+
+    <engines>
+        <engine name="cordova" version=">=3.6.0" />
+    </engines>
+
+    <js-module src="plugin/www/ExpressCheckout.js" name="ExpressCheckout">
+        <clobbers target="ExpressCheckout" />
+    </js-module>
+
+    <platform name="android">
+        <source-file src="plugin/src/android/ExpressCheckout.java" target-dir="src/in/juspay/ec/hybrid/" />
+        <framework src="plugin/_plugin-dependencies.gradle" custom="true" type="gradleReference" />
+        <resource-file src="plugin/src/libs/godel-assets" target="assets" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="ExpressCheckout">
+                <param name="android-package" value="in.juspay.ec.hybrid.ExpressCheckout" />
+            </feature>
+        </config-file>
+
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity
+                android:theme="@style/Theme.AppCompat.Light"
+                android:label="Processing your payment"
+                android:name="in.juspay.godel.PaymentActivity"
+                android:hardwareAccelerated="true"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.READ_SMS" />
+            <uses-permission android:name="android.permission.RECEIVE_SMS" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        </config-file>
+    </platform>
+
+    <platform name="ios">
+        <framework src="ExpressCheckout" type="podspec" spec="~> 0.1.33" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="JavaScriptCore.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="ExpressCheckout">
+                <param name="ios-package" value="JPExpressCheckout" />
+            </feature>
+        </config-file>
+        <header-file src="plugin/src/ios/JPExpressCheckout.h" target-dir="ExpressCheckout"/>
+        <source-file src="plugin/src/ios/JPExpressCheckout.m" target-dir="ExpressCheckout"/>
+    </platform>
+</plugin>

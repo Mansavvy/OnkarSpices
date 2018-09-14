@@ -1,0 +1,33 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "juspay-ec-sdk-plugin": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-speechrecognition": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-plugin-tts": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.onkarfoods.app"
+    }
+  },
+  "dependent_plugins": {}
+}

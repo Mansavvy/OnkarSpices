@@ -1,0 +1,60 @@
+<div class="topnav">
+	<i class="fa fa-arrow-circle-o-left" ng-click="mainPage()"></i>
+  <h4>Flyer</h4>
+</div>
+<div class="conatiner-fluid">
+    <div class="row">
+        <div class="col-6 flyer-box" ng-repeat="x in flyersData" ng-class="{'displayNone': x == 'system.indexes'}" data-toggle="modal" data-target="#showFlyer">
+            <div class="flyer-data-box" ng-click="showFlyerData(x)" id="statusOf{{x}}">
+                <div class="card">
+                    <i class="fa fa-newspaper-o"></i>
+                    <hr>
+                    <h3>{{x}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal" id="showFlyer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title text-center">FLYER</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body viewFlyers">
+                <div class="flyerSheet" id="flyer">
+                    <img src="img/logo1.jpg" class="headerLogo1">
+                    <img src="img/logo1.jpg" class="headerLogo2">
+                    <img src="img/logo1.jpg" class="footerLogo1">
+                    <img src="img/logo1.jpg" class="footerLogo2">
+                    <input type="text" class="headingInput" ng-model="flyerHeading" disabled>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4 data-box" ng-repeat="x in viewbleFlyerData">
+                                <div class="statusOfFlyer">{{x.flyer_status}}</div>
+                                <img src="{{x.prod_image}}">
+                                <hr>
+                                <p>Category:<span>{{x.selected_Cat}}</span></p>
+
+                                <hr>
+                                <p>Product:<span>{{x.selected_Prod}}</span></p>
+
+                                <hr>
+                                <p>Price:<span>${{x.selected_Price}}</span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addProduct"></div>
+                    <h6 class="footerCopy">Copyrights <i class="fa fa-copyright"></i> Onkar Foods & Spices</h6>
+                </div>
+        </div>
+    </div>
+</div>

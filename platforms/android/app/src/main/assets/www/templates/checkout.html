@@ -1,0 +1,181 @@
+<div class="topnav">
+	<i class="fa fa-arrow-circle-o-left" ng-click="back()"></i>
+  <h4>Checkout</h4>
+</div>
+
+<div class="input-group mb-3 orderName" >
+  <div class="input-group-prepend">
+    <span class="input-group-text">Order</span>
+  </div>
+  <input type="text" class="form-control" id="orderName" placeholder="Order Name">
+</div>
+
+<div id="orderedItems">
+	<div class="secondDiv"></div>
+	<div class="prod">
+		<span>Order Amount</span>
+		<span class="orderAmount"></span>
+		<br>
+		<br>
+		<span>Delivery Charges</span>
+		<span class="deliveryAmount">2.99</span>
+		<br>
+		<br>
+		<span>HST (13%)</span>
+		<span class="hstAmount"></span>
+		<br>
+		<br>
+		<span>Total</span>
+		<span class="finalAmount"></span>
+		<br>
+		<br>
+		<span>Earn Points [$1 -> 1 point(s)]</span>
+		<span class="earnPoints"></span>
+	</div>
+
+</div>
+<h3 class="text-center">Delivery Contact</h3>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Name</span>
+  </div>
+  <input type="text" class="form-control" id="firstname">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Contact</span>
+  </div>
+  <input type="tel" class="form-control" id="contact">
+</div>
+<hr>
+<h3 class="text-center">Delivery Address</h3>
+<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Street</span>
+	  </div>
+	  <input type="tel" class="form-control" id="streetName">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">House Number</span>
+  </div>
+  <input type="tel" class="form-control" id="housenumber">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">City</span>
+  </div>
+  <input type="tel" class="form-control" id="city">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Zip Code</span>
+  </div>
+  <input type="tel" class="form-control" id="zip">
+</div>
+
+
+<button type="button" class="btn btn-primary mapBtn" data-toggle="modal" data-target="#mapModal" onclick="checkGps()">
+  Choose from Map
+</button>
+
+<hr>
+<h3 class="text-center">Payment Method</h3>
+<div class="pretty p-svg p-round p-plain p-jelly deliveryOptions">
+    <input type="checkbox" id="cashOnDelivery"/>
+    <div class="state p-success">
+        <span class="svg" uk-icon="icon: check"></span>
+        <label>Cash On Delivery</label>
+    </div>
+</div>
+<div class="pretty p-svg p-round p-plain p-jelly deliveryOptions">
+    <input type="checkbox" id="cardPayment"/>
+    <div class="state p-success">
+        <span class="svg" uk-icon="icon: check"></span>
+        <label>Credit/Debit Payment</label>
+    </div>
+</div>
+
+<hr>
+<div id="totalAmount" ng-click="confirmOrder()">
+	<span>Confirm Order</span>
+	<span class="orderAmount">0.00</span>
+</div>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="cardPaymentModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="paymentProcess"><img src="img/payLoading.gif"></div>
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Credit/Debit Payment</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Card Type</label>
+          <select class="form-control" id="CardType">
+            <option value="Visa" selected="">Visa</option>
+            <option value="MasterCard">Master Card</option>
+            <option value="Maestro">Maestro</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Card Number</span>
+          </div>
+          <input type="number" class="form-control" id="cardNumber" value="4536000376309808">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">CVV Number</span>
+          </div>
+          <input type="number" class="form-control" id="cvvNumber">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>Expiry Month</label>
+          <select class="form-control" id="expMonth">
+            <option value="Jul" selected="">7</option>
+            <option value="Aug">8</option>
+            <option value="Sep">9</option>
+            <option value="Oct">10</option>
+            <option value="Nov">11</option>
+            <option value="Dec">12</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Expiry Year</label>
+          <select class="form-control" id="expYear">
+            <option value="Jan" selected="">2017</option>
+            <option value="Feb">2018</option>
+            <option value="Mar">2019</option>
+            <option value="Apr">2020</option>
+            <option value="May">2021</option>
+            <option value="Jun">2022</option>
+            <option value="Jul">2023</option>
+            <option value="Aug">2024</option>
+            <option value="Sep">2025</option>
+            <option value="Oct">2026</option>
+            <option value="Nov">2027</option>
+            <option value="Dec">2028</option>
+          </select>
+        </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" ng-click="testCreditCard()">Confirm</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
